@@ -5,10 +5,11 @@
 
 <body>
     <br>
-    <div class="container bg-white shadow-md pd-5 form-layout">
+    <div class="container bg-white shadow-md pd-5 form-layout ">
+        <br>
 
-      <h1>Profile Managment</h1>
-      <form method="POST" action="" >
+        <h3>Update username/email</h3>
+        <form method="POST" action="" >
         
             {% csrf_token %}
 
@@ -18,14 +19,15 @@
             <br>
 
 
-            <button class="btn btn-primary" type="submit" class="btn btn-primary">Submit</button>
+            <button class="btn btn-primary" type="submit" class="btn btn-primary">Update</button>
             
-      </form>
-
+        </form>
+        <br>
     </div>
+    <br>
     <div class="container bg-white shadow-md pd-5 form-layout">
-
-        <h1>Upload Your Photo</h1>
+        <br>
+        <h3>Upload photo</h3>
         <form method="POST" action=""  enctype="multipart/form-data">
           
               {% csrf_token %}
@@ -35,17 +37,17 @@
               <br>
   
   
-              <button class="btn btn-primary" type="submit" class="btn btn-primary">Submit</button>
+              <button class="btn btn-primary" type="submit" class="btn btn-primary">Update</button>
               
         </form>
-  
+        <br>
       </div>
     <br>
 
 
     <div class="container bg-white shadow-md pd-5 form-layout">
     <br>
-
+        <h3>Account deletion</h3>
         <a href="{% url 'delete-user' %}"  class="btn btn-primary"> Delete Account</a>
         <br>
 
