@@ -1,0 +1,28 @@
+{% extends 'lynx/main.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+
+
+  <body>
+    <br>
+    <div class="container bg-white shadow-md pd-5 form-layout">
+
+      <h1> Delete your account here: </h1>
+      <br>
+      <form method="POST" action="" >
+        {% csrf_token %}
+
+        <p> Are you sure ???</p>
+        <a href="{% url 'profile-management' %}" >Go Back</a>" 
+        <br>
+        <button class="btn btn-primary" type="submit" class="btn btn-primary">Delete</button>
+      </form>
+    </div>
+    <br>
+
+  </body>
+
+
+{% endblock  %}

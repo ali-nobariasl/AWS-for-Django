@@ -1,0 +1,29 @@
+{% extends 'lynx/main.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+<body>
+    <br>
+    <div class="container bg-white shadow-md pd-5 form-layout">
+
+      <h1>Login</h1>
+      <br>
+      <form method="POST" action="" >
+        {% csrf_token %}
+
+        {{form.username|as_crispy_field}}
+        <br>
+        {{form.password|as_crispy_field}}
+        <br>
+
+
+        <button class="btn btn-primary" type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+    <br>
+
+</body>
+
+
+{% endblock  %}
