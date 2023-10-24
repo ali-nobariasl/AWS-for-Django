@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'lynx',
 
     'crispy_forms',
+    'storages',
 ]
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
@@ -134,3 +135,20 @@ MEDIA_ROOT = BASE_DIR / 'static/images'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+
+##
+##
+## AWS configurations:
+
+AWS_ACCESS_KEY = ''
+AWS_SECRET_ACCESS_KEY = ''
+
+
+AWS_STORAGE_BUCKET_NAME = ''
+
+DEFAULT_FILE_STORAGE = ''
+STATICFILES_STORAGE = ''
+AWS_S3_CUSTOM_DOMAIN = ''
+AWS_S3_FILE_OVERWRITE = False
