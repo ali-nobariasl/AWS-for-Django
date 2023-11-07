@@ -13,3 +13,8 @@ Install this lib for using SES service:<br>  1) pip install django-ses
 Install this lib for using Postgresql:<br>  1) pip install psycopg2-binary
 <br>
 Install this for hiding your sensitive information:<br> 1) pip install python-decouple
+<br>
+install this for using ElastikBeanstalk:(but not in virtual Environment) <br>  pip install pyyamal==5.3.1 awsebcli
+<br>
+install this in a Virtual Environment: <br>    pip install gunicorn
+<br>
